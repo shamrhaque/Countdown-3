@@ -9,7 +9,7 @@ const News = () => {
     const fetchNews = async () => {
       const apiKey = process.env.REACT_APP_NYT_API_KEY;
       const response = await axios.get(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`);
-      setNews(response.data.results.slice(0, 5)); // Top 5 news stories
+      setNews(response.data.results.slice(0, 5)); 
     };
 
     fetchNews();

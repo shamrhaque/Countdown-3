@@ -13,15 +13,12 @@ const Weather = ({ location }) => {
         const { lat, lon } = location;
         const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
-        // Fetch current weather
         const currentResponse = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
         setCurrentWeather(currentResponse.data);
 
-        // Fetch hourly forecast
         const hourlyResponse = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
-        setHourlyForecast(hourlyResponse.data.list.slice(0, 24)); // Next 24 hours
+        setHourlyForecast(hourlyResponse.data.list.slice(0, 24)); 
 
-        // Fetch daily forecast
         const dailyResponse = await axios.get(`https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&cnt=7&appid=${apiKey}&units=metric`);
         setDailyForecast(dailyResponse.data.list);
       } catch (error) {
@@ -48,13 +45,13 @@ const Weather = ({ location }) => {
       {hourlyForecast && (
         <div className="hourly-forecast">
           <h3>Hourly Forecast</h3>
-          {/* Render hourly forecast */}
+          {}
         </div>
       )}
       {dailyForecast && (
         <div className="daily-forecast">
           <h3>Daily Forecast</h3>
-          {/* Render daily forecast */}
+          {}
         </div>
       )}
     </div>
