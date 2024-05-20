@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import LocationInput from './components/LocationInput';
-import Weather from './components/Weather';
-import News from './components/News';
+import LocationInput from '../LocationInput/LocationInput';
+import Weather from '../Weather/Weather';
+import News from '../News/News';
 import './App.css';
 
 const App = () => {

@@ -1,0 +1,29 @@
+.weather {
+    margin: 1rem;
+  }
+  
+  .current-weather,
+  .hourly-forecast,
+  .daily-forecast {
+    margin-bottom: 1rem;
+  }
+  
+  .current-weather h3,
+  .hourly-forecast h3,
+  .daily-forecast h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .current-weather p,
+  .hourly-forecast p,
+  .daily-forecast p {
+    margin: 0.5rem 0;
+  }
+  
+  .current-weather img,
+  .hourly-forecast img,
+  .daily-forecast img {
+    width: 50px;
+    height: 50px;
+  }

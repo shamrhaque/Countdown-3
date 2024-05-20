@@ -1,0 +1,26 @@
+.news {
+    margin: 1rem;
+  }
+  
+  .news-article {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+  }
+  
+  .news-article h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .news-article p {
+    margin: 0.5rem 0;
+  }
+  
+  .news-article a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .news-article a:hover {
+    text-decoration: underline;
+  }
